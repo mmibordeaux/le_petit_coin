@@ -37,3 +37,26 @@ git push --set-upstream origin main
 Créer l'app (la nommer)
 
 Choisir de la lier à Github
+
+
+Ajouter ça au Gemfile 
+
+```rb
+ruby "3.4.1"
+```
+
+Mettre à jour le bundle 
+```bash
+bundle update --ruby
+```
+
+Supprimer le dossier `.github`
+
+
+Créer un fichier `Procfile``
+
+Mettre ça dedans 
+```
+web: bundle exec puma -C config/puma.rb
+postdeploy: rails db:migrate
+```
