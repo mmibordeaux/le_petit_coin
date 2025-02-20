@@ -3,7 +3,7 @@
 ## App en local 
 
 ```bash
-rails new --skip-solid --database=postgresql le_petit_coin
+rails new le_petit_coin --skip-solid --database=postgresql 
 cd le_petit_coin
 bundle add simple_form
 rails generate simple_form:install
