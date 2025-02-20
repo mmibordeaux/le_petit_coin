@@ -52,9 +52,9 @@ bundle update --ruby
 
 Supprimer le dossier `.github`
 
-Sur Scalingo, provisionner une base PostgreSQL (dans les ressources)
+Sur Scalingo, provisionner une base PostgreSQL (dans les ressources, addon)
 
-Créer un fichier `Procfile``
+Créer un fichier `Procfile`
 
 Mettre ça dedans 
 ```
