@@ -4,12 +4,14 @@
 
 <h1>Users</h1>
 
-<div id="users">
+<div class="row">
   <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+    <div class="col-lg-4">
+      <%= render user %>
+      <p>
+        <%= link_to "Show this user", user %>
+      </p>
+    </div>
   <% end %>
 </div>
 

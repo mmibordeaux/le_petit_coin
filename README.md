@@ -63,3 +63,21 @@ postdeploy: rails db:migrate
 ```
 
 Envoyer sur Github
+
+## Bootstrap
+
+
+Suivre cette doc :
+
+https://medium.com/@xnjiang/how-to-use-bootstrap-in-rails8-cd0d53f1c3bc
+
+
+Ajouter la config Simple Form pour Boostrap :
+```bash
+rails generate simple_form:install --bootstrap
+```
+
+Démarrer le serveur avec cette commande (et pas rails server) 
+```bash
+bin/dev
+```
