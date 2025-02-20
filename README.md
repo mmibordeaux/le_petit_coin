@@ -61,3 +61,5 @@ Mettre ça dedans
 web: bundle exec puma -C config/puma.rb
 postdeploy: rails db:migrate
 ```
+
+Envoyer sur Github
