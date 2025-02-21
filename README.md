@@ -81,3 +81,32 @@ Démarrer le serveur avec cette commande (et pas rails server)
 ```bash
 bin/dev
 ```
+
+## Devise
+
+S'il y a déjà une table users, il faut la supprimer
+```bash
+rails g migration drop_users
+```
+Ca crée une migration, dans laquelle il faut 
+```ruby 
+class DropUsers < ActiveRecord::Migration[8.0]
+  def change
+    drop_table :users 
+  end
+end
+```
+et évidemment on migre
+
+```bash
+rails db:migrate
+```
+
+Ensuite on suit l'install de devise
+https://github.com/heartcombo/devise?tab=readme-ov-file#getting-started
+
+```bash
+bundle add devise
+rails generate devise:install
+````
+
