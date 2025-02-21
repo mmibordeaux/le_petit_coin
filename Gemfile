@@ -65,3 +65,5 @@ gem "simple_form", "~> 5.3"
 
 gem "dartsass-rails"
 gem "bootstrap"
+
+gem "devise", "~> 4.9"
